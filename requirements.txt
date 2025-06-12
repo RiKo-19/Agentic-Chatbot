@@ -5,6 +5,7 @@ langchain-core
 langchain-openai
 langchain-groq
 langchain-community
+langgraph
 python-dotenv
 streamlit
 requests
