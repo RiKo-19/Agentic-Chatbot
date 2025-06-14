@@ -23,7 +23,7 @@ allow_web_search = st.checkbox("Allow Web Search", value=True)
 
 user_query = st.text_area("Enter your query:", height=150, placeholder="Ask Anything you want...")
 
-API_URL = "http://127.0.0.1:9999/chat"
+API_URL = "https://agentic-chatbot-wqfc.onrender.com/chat"
 
 if st.button("Ask AI Agent!"):
     if user_query.strip():
