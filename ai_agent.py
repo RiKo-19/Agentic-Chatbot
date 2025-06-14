@@ -13,7 +13,7 @@ OPENAI_API_BASE = os.environ.get("OPENAI_API_BASE")
 
 from langchain_groq import ChatGroq
 from langchain_openai import ChatOpenAI
-from langchain_community.tools.tavily_search import TavilySearchResults
+from langchain_tavily import TavilySearch
 
 openai_llm = ChatOpenAI(model = "gpt-4o-mini",
                         api_key=OPENROUTER_API_KEY,
@@ -21,7 +21,7 @@ openai_llm = ChatOpenAI(model = "gpt-4o-mini",
 
 groq_llm = ChatGroq(model = "llama-3.3-70b-versatile")
 
-search_tool=TavilySearchResults(max_results=2)
+search_tool=TavilySearch(max_results=2)
 
 # Setup AI Agent with tools
 
@@ -39,7 +39,7 @@ def get_response_from_ai_agent(llm_id, query, allow_search, system_prompt, provi
                          base_url=OPENAI_API_BASE
                          )
 
-    tools = [TavilySearchResults(max_results=2)] if allow_search else []
+    tools = [TavilySearch(max_results=2)] if allow_search else []
 
     agent=create_react_agent(
         model=llm,
