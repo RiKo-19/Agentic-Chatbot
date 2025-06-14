@@ -9,3 +9,4 @@ langgraph
 python-dotenv
 streamlit
 requests
+httpx
