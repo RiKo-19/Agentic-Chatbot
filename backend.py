@@ -38,8 +38,3 @@ def chat(request: Requeststate):
     response = get_response_from_ai_agent(llm_id, query, allow_search, system_prompt, provider)
     return response
     
-# Run app & Explore Swagger UI Docs
-
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=9999)
