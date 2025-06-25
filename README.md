@@ -17,6 +17,7 @@ AskMate-AI is an intelligent, customizable AI agent platform designed to respond
 
 - **Dockerized Architecture**  
   Containerized with Docker for smooth development, testing, and deployment across different environments.
+  My Docker Image link in Docker Hub - https://hub.docker.com/r/riko19/ai-agent
 
 - **AWS Deployment**  
   Deployed on Amazon Web Services for robust and scalable performance in production scenarios.
