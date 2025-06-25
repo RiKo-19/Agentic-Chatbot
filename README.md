@@ -39,3 +39,4 @@ AskMate-AI is an intelligent, customizable AI agent platform designed to respond
 ---
 
 ## User Interface
+![image](https://github.com/user-attachments/assets/11c4fb7e-d93c-44c9-a306-cf076d578caa)
